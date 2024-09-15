@@ -13,7 +13,7 @@ import (
 )
 
 func indexHandler(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("Please hit the `/qod` API to get the quote of the day. Automated trigger via github"))
+	w.Write([]byte("Automated trigger via github"))
 }
 
 
