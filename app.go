@@ -13,7 +13,7 @@ import (
 )
 
 func indexHandler(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("Automated trigger via github. Successfully trigger from within auto-deployer"))
+	w.Write([]byte("Automated trigger via github. ----- This is using portainer.io -----"))
 }
 
 
