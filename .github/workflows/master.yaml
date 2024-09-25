@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: |
-        curl -X POST -u "$ABLY_KEY" -H 'Content-Type: application/json' --data '{"name": "helloworld", "data": {}}' https://rest.ably.io/channels/autodeploy/messages  
+        curl -X POST -u "$ABLY_KEY" -H 'Content-Type: application/json' --data '{"name": "simpleserver", "data": "master"}' https://rest.ably.io/channels/autodeploy/messages  
       shell: bash
       env:
         ABLY_KEY: ${{secrets.ABLY}}      

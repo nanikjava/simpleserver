@@ -8,7 +8,7 @@ services:
     ports:
       - "8444:8444" 
     restart: unless-stopped
-#     networks: 
-#       - backend
-# networks:
-#   backend:    
+    networks: 
+      - backend
+networks:
+  backend:    
